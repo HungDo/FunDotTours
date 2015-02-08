@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <ScrollView 
+	    android:id="@+id/view2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+		<TableLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+			
+		    <!-- Traffic View -->
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_weight="1" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="20dp"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:text="Enable Traffic View" />
+
+		        <CheckBox
+		            android:id="@+id/trafficOn"
+		            android:layout_width="50dp"
+		            android:layout_height="fill_parent"
+		            android:layout_gravity="center_vertical"
+		            android:layout_weight="1" />
+		    </TableRow>
+
+		    <!-- Satellite View -->
+		    <!-- 
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50px"
+		        android:layout_weight="1" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="20px"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:text="Enable Satellite View" />
+
+		        <CheckBox
+		            android:id="@+id/satelliteOn"
+		            android:layout_width="50px"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="20px"
+		            android:layout_weight="1" />
+		    </TableRow>
+			-->			
+		    
+		    
+		    <!-- Auto On View -->
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_weight="1"
+		        android:id="@+id/tr1" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="20dp"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:text="Enable All Events" />
+
+		        <CheckBox
+		            android:id="@+id/allOn"
+		            android:layout_width="50dp"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="20dp"
+		            android:layout_weight="1" />
+		    </TableRow>
+		    
+			<!-- Audio On View -->
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_weight="1"
+		        android:id="@+id/tr2" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="20dp"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:text="Enable Audio Event" />
+
+		        <CheckBox
+		            android:id="@+id/audioOn"
+		            android:layout_width="50dp"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="20dp"
+		            android:layout_weight="1" />
+		    </TableRow>
+		    
+		    <!-- Position Updating -->
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_weight="1"
+		        android:id="@+id/tr3" >
+
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="20dp"
+		            android:layout_weight="9"
+		            android:gravity="center_vertical"
+		            android:text="Enable Current Location Updating" />
+
+		        <CheckBox
+		            android:id="@+id/pos_updateOn"
+		            android:layout_width="50dp"
+		            android:layout_height="fill_parent"
+		            android:layout_marginRight="20dp"
+		            android:layout_weight="1" />
+		    </TableRow>
+		    
+		    <!-- GPS? -->
+<!-- 		    <TableRow -->
+<!-- 		        android:layout_width="fill_parent" -->
+<!-- 		        android:layout_height="50dp" -->
+<!-- 		        android:layout_weight="1" -->
+<!-- 		        android:id="@+id/tr3" > -->
+
+<!-- 		        <LinearLayout  -->
+<!-- 		            android:layout_width="wrap_content" -->
+<!-- 		            android:layout_height="fill_parent" -->
+<!-- 		            android:orientation="vertical" -->
+<!-- 		            android:layout_marginLeft="20dp" -->
+<!-- 		            android:layout_weight="9" > -->
+		            
+<!-- 		        	<TextView -->
+<!-- 			            android:layout_width="wrap_content" -->
+<!-- 			            android:layout_height="wrap_content" -->
+<!-- 			            android:gravity="bottom" -->
+<!-- 			            android:layout_weight="9" -->
+<!-- 			            android:text="Use GPS Data" /> -->
+<!-- 		        	<TextView  -->
+<!-- 		        	    android:layout_width="wrap_content" -->
+<!-- 			            android:layout_height="wrap_content" -->
+<!-- 			            android:layout_weight="1" -->
+<!-- 			            android:textSize="8sp" -->
+<!-- 			            android:layout_marginLeft="40dp" -->
+<!-- 			            android:layout_marginBottom="10dp" -->
+<!-- 			            android:text="Please manually enable GPS. This does not 'enable' GPS" -->
+<!-- 			            /> -->
+<!-- 		        </LinearLayout> -->
+		        
+<!-- 		        <CheckBox -->
+<!-- 		            android:id="@+id/gpsOn" -->
+<!-- 		            android:layout_width="50dp" -->
+<!-- 		            android:layout_height="fill_parent" -->
+<!-- 		            android:layout_marginRight="20dp" -->
+<!-- 		            android:layout_weight="1" /> -->
+		        
+<!-- 		    </TableRow> -->
+		    
+		    <!-- Language -->
+
+<!-- 		    <TableRow -->
+<!-- 		        android:layout_width="fill_parent" -->
+<!-- 		        android:layout_height="50px" -->
+<!-- 		        android:layout_weight="1" -->
+<!-- 		        android:id="@+id/tr4" > -->
+		        
+<!-- 		        <LinearLayout  -->
+<!-- 		            android:layout_width="fill_parent" -->
+<!-- 		            android:layout_height="fill_parent" -->
+<!-- 		            android:layout_gravity="center_vertical" -->
+<!-- 		            android:layout_marginLeft="20px" -->
+<!-- 		            android:orientation="vertical"> -->
+		        	
+<!-- 			        <TextView -->
+<!-- 			            android:layout_width="wrap_content" -->
+<!-- 			            android:layout_height="wrap_content" -->
+<!-- 			            android:gravity="center_vertical" -->
+<!-- 			            android:text="Voices" /> -->
+<!-- 			        <Spinner -->
+<!-- 			            android:id="@+id/spinner" -->
+<!-- 			            android:layout_width="fill_parent" -->
+<!-- 			            android:layout_height="wrap_content" -->
+<!-- 			            android:prompt="@string/gvoice" /> -->
+<!-- 		        </LinearLayout>		         -->
+<!-- 		    </TableRow> -->
+
+		    
+			<!-- Radius -->
+			<!-- 
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50px"
+		        android:layout_marginLeft="20px"
+		        android:layout_marginTop="10px"
+		        android:layout_marginBottom="5px"
+		        android:layout_weight="1" >
+		        
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:gravity="center_vertical"
+	            android:text="View Radius (miles)" />
+		        
+		    </TableRow>
+		    
+		    <TableRow 
+		        android:layout_width="fill_parent"
+		        android:layout_height="50px"
+		        android:layout_marginLeft="20px"
+		        android:layout_marginTop="5px"
+		        android:layout_marginBottom="10px"
+		        android:layout_weight="1" >
+		        
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:gravity="center_vertical">
+		        	
+
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginLeft="35px"
+			            android:layout_marginRight="5px"
+			            android:gravity="center_vertical"
+			            android:text="1" />
+			        
+			        <SeekBar
+			            android:id="@+id/milesBar"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_weight="15"
+			            android:max="20"
+			            android:progress="2" />
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_gravity="left"
+			            android:layout_marginLeft="5px"
+			            android:gravity="center_vertical"
+			            android:text="20" />
+			        	
+		            
+		        </LinearLayout>
+		    </TableRow>    
+		    -->    
+
+		    <!-- Zoom -->
+
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginTop="10dp"
+		        android:layout_weight="1" >
+		        
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:gravity="center_vertical"
+	                android:text="Default Zoom" />
+
+
+		    </TableRow>
+
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50dp"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:gravity="center"
+		        android:layout_weight="1" >
+
+		        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical">
+		            
+		        	<TextView
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="fill_parent"
+		        	    android:textSize="12dp"
+		        	    android:layout_weight="1"
+		        	    android:gravity="center"
+		        	    android:text="Out" />
+			        <SeekBar
+			            android:id="@+id/zoomBar"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:layout_weight="8"
+			            android:max="20"
+			            android:progress="1" />
+			           
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:textSize="12dp"
+			            android:layout_weight="1"
+			            android:gravity="center"
+			            android:text="In" />
+		            
+		        </LinearLayout>
+		        		        
+		    </TableRow>
+		    
+		    <!-- Sensitivity -->
+		    <!-- 
+		    <TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50px"
+		        android:layout_marginBottom="5px"
+		        android:layout_marginLeft="20px"
+		        android:layout_marginTop="10px"
+		        android:layout_weight="1" >
+		        
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="Sensitivity" />
+		    </TableRow>
+		    
+			<TableRow
+		        android:layout_width="fill_parent"
+		        android:layout_height="50px"
+		        android:layout_marginBottom="10px"
+		        android:layout_marginLeft="20px"
+		        android:layout_marginRight="20px"
+		        android:layout_marginTop="5px"
+		        android:gravity="center"
+		        android:layout_weight="1" >
+
+		        <LinearLayout 
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical">
+		            
+		        	<TextView
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="fill_parent"
+		        	    android:textSize="12dp"
+		        	    android:layout_weight="1"
+		        	    android:gravity="center"
+		        	    android:text="Less" />
+	
+			        <SeekBar
+			            android:id="@+id/senseBar"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="8"
+			            android:gravity="center"
+			            android:max="20"
+			            android:progress="1" />
+			           
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:textSize="12dp"
+			            android:layout_weight="1"
+			            android:gravity="center"
+			            android:text="More" />
+		            
+		        </LinearLayout>
+		        		        
+		    </TableRow> -->
+
+		</TableLayout>
+		
+	</ScrollView>
+	
+</LinearLayout>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hung -->
+<animation-list 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    id="selected" 
+    android:oneshot="false">
+	<item 
+	    android:drawable="@drawable/loadscreen_hq72x72"
+	    android:scaleType="center" 
+	    android:duration="50" />
+</animation-list>

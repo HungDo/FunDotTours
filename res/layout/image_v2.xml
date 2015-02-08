@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hung -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" 
+        android:id="@+id/img_pop"
+        android:src="@drawable/image_not_found"/>
+</merge>

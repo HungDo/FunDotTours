@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/mediapop"
+	    android:layout_margin="10dp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center_horizontal"
+	    android:orientation="vertical" >
+
+<!-- 	        300dp -->	
+	    <ImageView
+	        android:id="@+id/mediaimage"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	    	android:src="@drawable/image_not_found"
+	    	android:layout_gravity="center_horizontal"/>
+	    <!-- 
+	    <VideoView
+	        android:id="@+id/mediavideo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal" />
+	        -->
+	    <LinearLayout 
+	        android:id="@+id/mediabutts"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_gravity="center_horizontal">
+			
+	        <ImageView
+			    android:id="@+id/prevmedia"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+				android:src="@drawable/previous"/>
+		    <ImageView
+		        android:id="@+id/mediaclose"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_weight="1"
+		        android:src="@drawable/close"/>  
+		    <ImageView
+			    android:id="@+id/nextmedia"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:src="@drawable/next"/>  
+	       <!-- 
+			<Button
+			    android:id="@+id/prevmedia"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="Prev"/>
+		    <Button 
+		        android:id="@+id/mediaclose"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_weight="1"
+		        android:text="@string/close"/>  
+		    <Button
+			    android:id="@+id/nextmedia"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="Next"/> -->
+	    </LinearLayout> 
+</LinearLayout>

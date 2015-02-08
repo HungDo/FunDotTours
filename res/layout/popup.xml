@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" 
+    android:background="@drawable/dotbg" >
+	<!-- 	android:background="#007FFF" -->
+    
+    <ScrollView
+        android:id="@+id/popscroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation ="vertical" >
+        	
+        <LinearLayout
+            android:id="@+id/popstuff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView
+				android:id="@+id/coupon"
+				android:layout_width="fill_parent"
+				android:layout_height="20dp"
+				android:layout_gravity="center_vertical"
+				android:textColor="#000000"
+				android:gravity="center"
+				android:text="Coupon"
+				android:textSize="15dp" />
+
+            <TextView
+				android:id="@+id/address"
+				android:layout_width="fill_parent"
+				android:layout_height="50dp"
+				android:layout_gravity="center_vertical"
+				android:textColor="#000000"
+				android:gravity="center"
+				android:text="Address"
+				android:textSize="15dp" />
+            
+            <HorizontalScrollView
+		        android:id="@+id/hsv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="225dp"
+		        android:orientation="horizontal"
+		        android:visibility="gone">
+            	<LinearLayout
+			        android:id="@+id/imageline"
+			        android:orientation="horizontal"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent" >
+			        
+		        	<ImageView
+			            android:id="@+id/popimg1"
+			            android:layout_height="match_parent"
+		                android:layout_gravity="center_vertical|center_horizontal"
+			            android:src="@drawable/image_not_found"
+			            android:layout_width="225dp" />
+			        <ImageView
+			            android:id="@+id/popimg2"
+			            android:layout_width="225dp"
+			            android:layout_height="match_parent"
+		                android:layout_gravity="center_vertical|center_horizontal"
+			            android:src="@drawable/image_not_found" />
+			        <ImageView
+			            android:id="@+id/popimg3"
+			            android:layout_width="225dp"
+			            android:layout_height="match_parent"
+		                android:layout_gravity="center_vertical|center_horizontal"
+			            android:src="@drawable/image_not_found" />
+		    	</LinearLayout>
+		    </HorizontalScrollView>
+
+<!-- Alex - removed the webview -->
+<!--            <WebView -->
+<!--                android:id="@+id/text" -->
+<!--                android:layout_width="fill_parent" -->
+<!--                android:layout_height="wrap_content" -->
+<!--                android:layout_gravity="center_vertical" -->
+<!--                android:gravity="center" -->
+<!--                android:isScrollContainer="true" -->
+<!--                android:textSize="15dp" -->
+<!--                android:text="Text" /> -->
+
+           	<TextView 
+                 android:id="@+id/text" 
+                 android:layout_width="fill_parent" 
+                 android:layout_height="wrap_content" 
+                 android:layout_gravity="center_vertical" 
+                 android:gravity="center" 
+                 android:textColor="#000000"
+                 android:isScrollContainer="true" 
+                 android:textSize="15dp" 
+                 android:text="Text" /> 
+
+<!-- Alex - added a table view for the links from the basic tour information  -->
+			<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/subdotsTable"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" >
+			</TableLayout>	
+			
+			<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/linksTable"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" >
+			</TableLayout>
+			
+           	<TextView 
+                 android:id="@+id/moretext" 
+                 android:layout_width="fill_parent" 
+                 android:layout_height="wrap_content" 
+                 android:layout_gravity="center_vertical" 
+                 android:gravity="center" 
+                 android:isScrollContainer="true" 
+                 android:textSize="15dp" 
+                 android:text="" /> 
+        
+        </LinearLayout>
+    </ScrollView>
+    
+    <TextView
+        android:id="@+id/links"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:isScrollContainer="true"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:text="Links" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp" >
+        
+        <ImageButton
+            android:id="@+id/yesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/play" />
+        
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/more"/>
+			
+        <ImageButton
+            android:id="@+id/nobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/close" />
+    </LinearLayout>  
+
+    
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemData"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:gravity="center_vertical|left"
+    android:background="@android:color/transparent" >
+    <ImageView
+        android:id = "@+id/itemImg"
+        android:layout_width="wrap_content"
+	    android:background="@android:color/transparent"
+	    android:layout_height="45dp"
+	    android:layout_weight="1"
+		android:layout_gravity="center_horizontal|center_vertical"
+        />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3"
+    	android:background="@android:color/transparent" >
+        
+        <TextView
+	        android:id = "@+id/itemTxt" 
+	        android:layout_width="wrap_content"
+		    android:layout_height="0dip"
+		    android:textSize="14dp"
+		    android:layout_weight="2"
+		    android:textColor="#000000"
+		    android:background="@android:color/transparent" />
+			<!-- android:textColor="#FFFFFF" -->
+        
+        <TextView
+	        android:id = "@+id/itemTxt2" 
+	        android:layout_width="wrap_content"
+		    android:layout_height="0dip"
+		    android:textSize="10dp"
+		    android:layout_weight="1"
+		    android:textColor="#000000"
+    		android:background="@android:color/transparent" />
+			<!-- android:textColor="#FFFFFF" -->
+    </LinearLayout>
+    
+    <ImageView
+        android:background="@android:color/transparent"
+        android:id = "@+id/itemImg2"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+	    android:layout_height="45dp"
+	    android:layout_weight="3"
+		android:gravity="center_horizontal|center_vertical" />
+    <CheckBox 
+        android:id="@+id/itemChk"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fun Dot Tours</string>
+	<string name="voice">Choose a voice</string>
+    <string-array name="voice_list">
+        <item>US English Female</item>
+        <item>US English Male</item>
+        <item>UK English Female</item>
+        <item>UK English Male</item>
+    </string-array>
+    
+<!--     <string name="gvoice">Choose a voice</string> -->
+<!--     <string-array name="gvoice_list"> -->
+<!--         <item>English</item> -->
+<!--         <item>Spanish</item> -->
+<!--         <item>French</item> -->
+<!--         <item>German</item> -->
+<!--     </string-array> -->
+    
+    <string name="close">Close</string>
+</resources>

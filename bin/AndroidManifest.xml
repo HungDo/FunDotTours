@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fundots.deploy"
+    android:versionCode="14"
+    android:versionName="2.2" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <!-- permissions -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+
+    <application
+        android:icon="@drawable/hq55x55"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".LoadActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+		    android:label="@string/app_name"
+            android:name=".TourAppActivity"
+            android:screenOrientation="portrait" >
+		</activity>
+		
+		<activity 
+		    android:label="Settings"
+            android:name="com.fundots.deploy.SettingsActivity"
+            android:screenOrientation="portrait" >
+		</activity>
+		
+		<activity 
+		    android:label="Tour Site"
+            android:name="com.fundots.toursite.TourSiteActivity"
+            android:screenOrientation="portrait" >
+		</activity>
+		
+    </application>
+
+</manifest>

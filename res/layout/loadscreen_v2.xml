@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:background="@drawable/dotbg" >
+	<!-- 	android:background="#007FFF" -->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+		android:textColor="#000000"/>
+			<!-- android:textColor="#FFFFFF" -->
+	<LinearLayout 
+	    android:id="@+id/views"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_below="@id/welcome">
+        
+		<!-- Hung -->
+	    <LinearLayout 
+	        android:layout_height="175dp"
+	        android:layout_width="match_parent"
+	        android:gravity="center_horizontal" >
+			<!-- 	        android:background="#FFFFFF" -->	        
+		    <ImageView
+		        android:id="@+id/loadscreen_img"
+		        android:layout_gravity="center_vertical"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content" />
+				<!-- 		    android:layout_weight="1" -->
+		    	<!-- 	        android:scaleType="center" -->
+		    	<!-- 	        android:src="@drawable/loadscreen_hq72x72" -->
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_height="wrap_content"
+	        android:layout_width="match_parent"
+	        android:orientation="horizontal"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginBottom="2dp" >
+	    	<TextView 
+		        android:text="Featured Tours and Events"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:textSize="14sp"
+		        android:textColor="#000000"/>
+			<!-- android:textColor="#FFFFFF" -->
+
+	    	<ProgressBar
+	    	    android:id="@+id/featureProgressBar"
+	    	    style="?android:attr/progressBarStyleSmall"
+	    	    android:layout_marginLeft="20dp"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content" />
+
+	    </LinearLayout>	    
+	    
+	    <ListView 
+	        android:id="@+id/featured"
+	        android:layout_height="175dp"
+	        android:layout_width="match_parent"
+	        android:layout_gravity="left"
+	        android:layout_weight="1" />
+	    
+	</LinearLayout>
+    
+	
+    <LinearLayout 
+        android:id="@+id/temp_menu"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/views"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+        
+        <Button 
+            android:id="@+id/explore"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="2dp"
+            android:text="Explore" />
+        
+        <Button 
+            android:id="@+id/search"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="2dp"
+            android:text="Browse Tours" />
+        
+        <Button 
+            android:id="@+id/settings"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="2dp"
+            android:text="Settings" />
+        
+        <Button 
+            android:id="@+id/exit"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:text="Exit" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>
